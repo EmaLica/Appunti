@@ -79,9 +79,8 @@ public Response readBook(@QueryParam("nomeLibro") String nomeLibro) {
 @GET
 @Path("/{id}")
 @Produces(MediaType.APPLICATION_JSON)
-public Book getBook(@PathParam("id") int id, 
-					@HeaderParam("Authorization") String authHeader){
-					}
+public Book getBook(@PathParam("id") int id, @HeaderParam("Authorization") String authHeader){
+}
 ```
 
 7.  @DefaultValue: questa annotazione specifica un valore predefinito per un parametro. Ad esempio, se si annota un metodo con @QueryParam("name") e @DefaultValue("guest"), il valore predefinito del parametro "name" sarà "guest" se non viene fornito alcun valore.
