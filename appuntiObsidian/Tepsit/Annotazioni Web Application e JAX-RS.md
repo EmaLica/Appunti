@@ -1,5 +1,4 @@
 
-
 ## Java JAX-RS
 
 JAX-RS è una specifica Java per lo sviluppo di servizi web RESTful. Le annotazioni JAX-RS forniscono un modo per configurare un servizio web RESTful in modo dichiarativo, rendendo più facile e veloce lo sviluppo di applicazioni web.
@@ -187,6 +186,7 @@ public Response login(@FormParam("username") String username, @FormParam("passwo
 ```
 
 ### Esempi file XML e JSON
+
 Esempio file XML:
 In questo esempio, il file XML rappresenta un catalogo di libri. L'elemento root è "catalog" e contiene due elementi figlio, ognuno rappresentante un libro. Ogni elemento libro ha un identificatore univoco ("id") e contiene informazioni come autore, titolo, genere, prezzo, data di pubblicazione e descrizione.
 ```XML
@@ -234,13 +234,25 @@ In questo esempio, il file JSON rappresenta un profilo utente. L'oggetto JSON co
 }
 ```
 
-## Metodi HTTP corrispetivi CRUD: 
+### Metodi HTTP corrispetivi CRUD: 
+
 - GET: read
 - POST: create
 - PUT / PATH: update
 - DELETE: delete
 
-##  Header HTTP:
+### Header HTTP:
+
 contiene i metadati della comunicazione.
 Content-Type: 
 Accept: 
+```http
+GET /index.html HTTP/1.1
+Host: www.example.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+```
