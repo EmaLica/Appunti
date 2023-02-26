@@ -206,7 +206,7 @@ In questo esempio, il file XML rappresenta un catalogo di libri. L'elemento root
     <genre>Fantasy</genre>
     <price>5.95</price>
     <publish_date>2000-12-16</publish_date>
-    <description>A former architect battles corporate zombies, an evil sorceress, and her own childhood to become queen of the world.</description>
+    <description>A former architect battles corporate zombies, an evil sorceress</description>
   </book>
 </catalog>
 ```
