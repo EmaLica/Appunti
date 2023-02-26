@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tepsit/Annotazioni Web Application e JAX-RS.md",
+                "file": "Sistemi e reti/Appunti verifica.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tepsit/Annotazioni Web Application e JAX-RS.md",
+                "file": "Sistemi e reti/Appunti verifica.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tepsit/Annotazioni Web Application e JAX-RS.md",
+                "file": "Sistemi e reti/Appunti verifica.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tepsit/Annotazioni Web Application e JAX-RS.md"
+                "file": "Sistemi e reti/Appunti verifica.md"
               }
             }
           }
@@ -149,10 +149,10 @@
   },
   "active": "44a70894a403aa27",
   "lastOpenFiles": [
-    "Untitled.md",
     "Tepsit/Annotazioni Web Application e JAX-RS.md",
+    "Untitled.md",
     "Tepsit/Web Application e JAX-RS.md",
-    "Sistemi e reti/prova.md",
+    "Sistemi e reti/Appunti verifica.md",
     "Informatica/prova.md",
     "Tepsit",
     "Sistemi e reti",
