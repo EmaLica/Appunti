@@ -14,7 +14,7 @@ public class Hello {
 }
 ```
 
-3.  @GET, @POST, @PUT, @DELETE: queste annotazioni specificano il tipo di richiesta HTTP associato al metodo annotato. Ad esempio, se si annota un metodo con @GET, allora il metodo risponderà solo alle richieste GET.
+2.  @GET, @POST, @PUT, @DELETE: queste annotazioni specificano il tipo di richiesta HTTP associato al metodo annotato. Ad esempio, se si annota un metodo con @GET, allora il metodo risponderà solo alle richieste GET.
 ``` java
 @GET
 @Produces(MediaType.APPLICATION_JSON)
@@ -42,7 +42,7 @@ public Person deletePerson(@PathParam("id") int id) {
 
 ```
 
-4.  @Produces, @Consumes: queste annotazioni specificano il tipo di contenuto dei dati che il metodo può produrre o consumare. Ad esempio, se si annota un metodo con @Produces("application/json"), il metodo produrrà solo dati in formato JSON.
+3.  @Produces, @Consumes: queste annotazioni specificano il tipo di contenuto dei dati che il metodo può produrre o consumare. Ad esempio, se si annota un metodo con @Produces("application/json"), il metodo produrrà solo dati in formato JSON.
 ``` java
 @POST 
 @Path("/add") 
@@ -54,7 +54,7 @@ public CalculationResult add(Numbers numero){
 }
 ```
 
-5.  @PathParam: questa annotazione specifica un parametro di percorso nell'URI. Ad esempio, se si annota un metodo con @Path("/{param}") e @PathParam("param"), il valore del parametro di percorso verrà passato come argomento al metodo.
+4.  @PathParam: questa annotazione specifica un parametro di percorso nell'URI. Ad esempio, se si annota un metodo con @Path("/{param}") e @PathParam("param"), il valore del parametro di percorso verrà passato come argomento al metodo.
 ``` java
 @Path("/libro/{nomeLibro}")
 public String getLibro(@PathParam("nomeLibro") String nomeLibro) {
@@ -62,7 +62,7 @@ public String getLibro(@PathParam("nomeLibro") String nomeLibro) {
 }
 ```
 
-6.  @QueryParam: questa annotazione specifica un parametro di query nell'URI. Ad esempio, se si annota un metodo con @Path("/users") e @QueryParam("name"), il valore del parametro di query verrà passato come argomento al metodo.
+5.  @QueryParam: questa annotazione specifica un parametro di query nell'URI. Ad esempio, se si annota un metodo con @Path("/users") e @QueryParam("name"), il valore del parametro di query verrà passato come argomento al metodo.
 ``` java
 @GET
 public Response readBook(@QueryParam("nomeLibro") String nomeLibro) {
@@ -74,7 +74,7 @@ public Response readBook(@QueryParam("nomeLibro") String nomeLibro) {
 }
 ```
 
-7.  @HeaderParam: questa annotazione specifica un parametro di intestazione HTTP. Ad esempio, se si annota un metodo con @HeaderParam("Authorization"), il valore dell'intestazione Authorization verrà passato come argomento al metodo.
+6.  @HeaderParam: questa annotazione specifica un parametro di intestazione HTTP. Ad esempio, se si annota un metodo con @HeaderParam("Authorization"), il valore dell'intestazione Authorization verrà passato come argomento al metodo.
 ``` java
 @GET
 @Path("/{id}")
@@ -84,7 +84,7 @@ public Book getBook(@PathParam("id") int id,
 					}
 ```
 
-8.  @DefaultValue: questa annotazione specifica un valore predefinito per un parametro. Ad esempio, se si annota un metodo con @QueryParam("name") e @DefaultValue("guest"), il valore predefinito del parametro "name" sarà "guest" se non viene fornito alcun valore.
+7.  @DefaultValue: questa annotazione specifica un valore predefinito per un parametro. Ad esempio, se si annota un metodo con @QueryParam("name") e @DefaultValue("guest"), il valore predefinito del parametro "name" sarà "guest" se non viene fornito alcun valore.
 ``` java
 @GET @Path("/hello") 
 @Produces(MediaType.TEXT_PLAIN) 
@@ -93,7 +93,7 @@ return "Hello, " + guestName + "!";
 }
 ```
 
-10. @ApplicationPath: annotazione che identifica il percorso dell'applicazione che ricopre il ruolo di percorso URL base delle risorse.
+8. @ApplicationPath: annotazione che identifica il percorso dell'applicazione che ricopre il ruolo di percorso URL base delle risorse.
 ``` java
 @ApplicationPath("/api")
 public class MyApplication extends Application {
@@ -103,7 +103,7 @@ public class MyApplication extends Application {
 
 ```
 
-12. ContextPath: percorso in cui confluiscono i file relativi alla root directory del webserver. In questo esempio, tutte le risorse della classe UserResource saranno disponibili sotto il percorso "/api/users". Il metodo getUser risponderà alle richieste iniziate con "/api/users/{id}".
+9. ContextPath: percorso in cui confluiscono i file relativi alla root directory del webserver. In questo esempio, tutte le risorse della classe UserResource saranno disponibili sotto il percorso "/api/users". Il metodo getUser risponderà alle richieste iniziate con "/api/users/{id}".
 ``` java
 @Path("/users")
 @ContextPath("/api")
@@ -117,7 +117,7 @@ public class UserResource {
 }
 ```
 
-11. Servlet: componente che consente di gestire l'interazione tra client e server ServletContext: componente che si occupa della condivisione di file e dati tra le varie pagine della webapplication.                                                          @Context: L'annotazione @Context viene utilizzata per iniettare le informazioni di contesto della richiesta HTTP nella variabile HttpHeaders.                              In questo esempio, il servizio web "HelloResource" utilizza l'annotazione @Context per iniettare l'oggetto ServletContext. Il metodo "sayHello" utilizza l'oggetto ServletContext per accedere ad un parametro di inizializzazione dell'applicazione chiamato "app-name". Il valore di questo parametro viene utilizzato per generare il messaggio di saluto.
+10. Servlet: componente che consente di gestire l'interazione tra client e server ServletContext: componente che si occupa della condivisione di file e dati tra le varie pagine della webapplication.                                                          @Context: L'annotazione @Context viene utilizzata per iniettare le informazioni di contesto della richiesta HTTP nella variabile HttpHeaders.                              In questo esempio, il servizio web "HelloResource" utilizza l'annotazione @Context per iniettare l'oggetto ServletContext. Il metodo "sayHello" utilizza l'oggetto ServletContext per accedere ad un parametro di inizializzazione dell'applicazione chiamato "app-name". Il valore di questo parametro viene utilizzato per generare il messaggio di saluto.
 ```java
 @Path("/hello")
 public class HelloResource {
@@ -136,7 +136,7 @@ public class HelloResource {
 ```
 
 
-15. @XmlRootElement: annotazione che identifica elementi il cui schema viene scritto in XML.
+11. @XmlRootElement: annotazione che identifica elementi il cui schema viene scritto in XML.
 ```java
 @XmlRootElement(name = "libro")
 public class Libro {
@@ -152,7 +152,7 @@ public class Libro {
 </libro>
 ```
 
-15. @CookieParam: annotazione che consente di estrarre il valore di una variabile all'interno di un cookie.
+12. @CookieParam: annotazione che consente di estrarre il valore di una variabile all'interno di un cookie.
 ```java
 @Path("/libro/aggiungi/{nomeLibro}")
 public Response addBook(@CookieParam("userToken") String userToken, @PathParam("nomeLibro") String nomeLibro) {
@@ -163,7 +163,7 @@ public Response addBook(@CookieParam("userToken") String userToken, @PathParam("
 }
 ```
 
-16. @FormParam: annotazione che consente di estrarre il valore di una variabile all'interno di un form.
+13. @FormParam: annotazione che consente di estrarre il valore di una variabile all'interno di un form.
 ```html
 <html>
 ...
@@ -244,13 +244,11 @@ In questo esempio, il file JSON rappresenta un profilo utente. L'oggetto JSON co
 ### Header HTTP:
 
 contiene i metadati della comunicazione.
-Content-Type: 
-Accept: 
 ```http
 GET /index.html HTTP/1.1
 Host: www.example.com
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0
-Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/*;q=0.8
 Accept-Language: en-US,en;q=0.5
 Accept-Encoding: gzip, deflate, br
 Connection: keep-alive
