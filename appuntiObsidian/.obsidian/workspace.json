@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "44a70894a403aa27",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Sistemi e reti/Appunti verifica.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "f93ded237b06bc3f",
             "type": "leaf",
             "state": {
@@ -31,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
