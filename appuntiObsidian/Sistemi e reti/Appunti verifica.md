@@ -65,7 +65,7 @@ Essi possono essere
 	|
 	-> in questo caso il firewall opera su 2 interfacce, una sulla rete trust (privata) e una sulla rete insicura (pubblica)
 	
-	- Firewall hardware: il firewall è costituito da un apparato hardware con almeno due interfacce, una sulla trust e una sulla pubblica, il firewall hardware può fungere anche da router per mettere in contatto le due reti
+Firewall hardware: il firewall è costituito da un apparato hardware con almeno due interfacce, una sulla trust e una sulla pubblica, il firewall hardware può fungere anche da router per mettere in contatto le due reti
 	
 Un firewall perimetrale può essere anche un applicazione di livello 7, (application layer firewall) che opera su un server
 
@@ -73,7 +73,7 @@ LIVELLI DI CONTROLLO DEL FIREWALL:
 FirewallPacket Filter: funzionalità minima che controlla il traffico a livello di indirizzamento IP e ispezione del flag SYN di TCP per intercettare  tentativi  di  connessione.
 Livello  indispensabile  per  bloccare  opermettere il traffico tra subnet e/o reti IP pubbliche;
 
-FirewallStateful  Inspection: in  grado  di  valutare  la  qualità  delle  connessioni TCP tramite il controllo approfondito dell’header dei pacchetti TCP, ovvero analisi fino a livello 4 di Trasporto. Questa funzionalità consente di intercettare traffico TCP che apparentemente appartiene a una connessione ma in realtà costituisce un tentativo di intrusione;
+FirewallStateful  Inspection: in  grado  di  valutare  la  qualità  delle  connessioni TCP tramite il controllo approfondito dell’header dei pacchetti TCP, ovvero analisi fino a livello 4 di Trasporto. Questa funzionalità consente di intercettare traffico TCP che apparentemente appartiene a una connessione ma in realtà costituisce un tentativo di intrusione;
 
 FirewallDeep Inspection: in grado di analizzare il traffico dei pacchetti fino a livello 7 Applicazione, analizzando il corretto uso dei protocolli applicativi e ispezionandone anche il contenuto. In base a un glossario su database, questo tipo di processo riesce a intercettare le firme dei virus o degli applicativi d’intrusione più diffusi. Inoltre è in grado di bloccare il traffico per determinati siti o in base a un elenco di parole chiave.
 Queste funzionalità richiedono una cospicua capacità prestazionale
