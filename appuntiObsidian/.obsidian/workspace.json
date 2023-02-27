@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f93ded237b06bc3f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Sistemi e reti/Java Web Socket.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Sistemi e reti/Appunti verifica.md",
+                "file": "Sistemi e reti/Java Web Socket.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Sistemi e reti/Appunti verifica.md",
+                "file": "Sistemi e reti/Java Web Socket.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Sistemi e reti/Appunti verifica.md"
+                "file": "Sistemi e reti/Java Web Socket.md"
               }
             }
           }
@@ -147,12 +160,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "44a70894a403aa27",
+  "active": "f93ded237b06bc3f",
   "lastOpenFiles": [
+    "Sistemi e reti/Appunti verifica.md",
+    "Sistemi e reti/Java Web Socket.md",
     "Tepsit/Annotazioni Web Application e JAX-RS.md",
     "Untitled.md",
     "Tepsit/Web Application e JAX-RS.md",
-    "Sistemi e reti/Appunti verifica.md",
     "Informatica/prova.md",
     "Tepsit",
     "Sistemi e reti",
