@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "appuntiObsidian/Sistemi e reti/Java Web Socket.md",
+                "file": "appuntiObsidian/Informatica/Compiti Informatica.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "appuntiObsidian/Sistemi e reti/Java Web Socket.md",
+                "file": "appuntiObsidian/Informatica/Compiti Informatica.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "appuntiObsidian/Sistemi e reti/Java Web Socket.md",
+                "file": "appuntiObsidian/Informatica/Compiti Informatica.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "appuntiObsidian/Sistemi e reti/Java Web Socket.md"
+                "file": "appuntiObsidian/Informatica/Compiti Informatica.md"
               }
             }
           }
@@ -148,8 +148,8 @@
   },
   "active": "e352e4a416e05d86",
   "lastOpenFiles": [
-    "appuntiObsidian/Sistemi e reti/Windows Server.md",
     "appuntiObsidian/Sistemi e reti/Java Web Socket.md",
+    "appuntiObsidian/Sistemi e reti/Windows Server.md",
     "appuntiObsidian/Sistemi e reti/Appunti verifica.md",
     "README.md"
   ]
